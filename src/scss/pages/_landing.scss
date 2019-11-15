@@ -1,0 +1,96 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-height: 100vh;
+
+  .header {
+    display: flex;
+    margin: 1rem 2rem;
+    align-items: center;
+    padding: 1rem 5rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+
+    &__img {}
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    flex-grow: 1;
+    // font-family: $font-montserrat;
+    justify-content: space-between;
+  }
+
+  .page-links {
+    display: flex;
+    margin-right: 4rem;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        color: $color-secondary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .auth-links {
+    display: flex;
+    align-items: center;
+
+    p.signup {
+      margin-right: 2rem;
+
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+      }
+    }
+
+    p.login {
+      padding: 0.7rem 2.5rem;
+      border-radius: 2px;
+      background-color: $color-primary;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+
+
+  }
+
+  .mobile-menu {}
+
+  .main {
+    flex: 1 0 auto;
+  }
+
+  .footer {
+    text-align: center;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 2rem 4rem;
+
+    &__newsletter {}
+
+    &__links {}
+
+    &__copyright {
+      font-size: 1.3rem;
+    }
+  }
+}
