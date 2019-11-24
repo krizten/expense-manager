@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from '@modules/app-routing/app-routing.module';
 import { AuthModule } from '@modules/auth/auth.module';
@@ -15,6 +16,7 @@ import { AppComponent } from '../app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     AuthModule,
     ExpenseManagerModule,
     LandingPageModule,
