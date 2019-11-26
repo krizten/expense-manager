@@ -1,1 +1,46 @@
-<p>login works!</p>
+<div class="auth-container login">
+  <div class="auth-inner">
+    <div class="logo">
+      <a [routerLink]="['/']"><img src="assets/images/logo.png" alt="Logo"></a>
+    </div>
+    <div class="text">
+      <h4>Login into your account</h4>
+      <p>Use your credentials to access your account
+      </p>
+    </div>
+    <form class="auth-form">
+      <app-form-group [type]="'email'" [placeholder]="'Your email'" [name]="'email'"></app-form-group>
+      <app-form-group [type]="'password'" [placeholder]="'Your password'" [name]="'password'"></app-form-group>
+      <div class="remember-me--forgot-pass">
+        <app-checkbox [labelText]="'Remember me'" [name]="'remember-me'" (check)="rememberMe($event)"></app-checkbox>
+        <p class="forgot-pass"><a href="">Forgot password?</a></p>
+      </div>
+      <div class="auth-btn-container">
+        <app-button [text]="'Login'"></app-button>
+      </div>
+      <div class="auth-alternatives">
+        <div class="divider"></div>
+        <p>or login with</p>
+        <div class="divider"></div>
+      </div>
+      <div class="social-login">
+        <div>
+          <app-social-button [type]="'google'"></app-social-button>
+        </div>
+        <div>
+          <app-social-button [type]="'facebook'"></app-social-button>
+        </div>
+        <div>
+          <app-social-button [type]="'twitter'"></app-social-button>
+        </div>
+      </div>
+      <div class="auth-redirect">
+        <p class="message">
+          Don't have an account?
+          <a class="redirect-link" [routerLink]="[ '/signup' ]">
+            <span>Register here</span></a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

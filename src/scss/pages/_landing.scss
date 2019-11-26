@@ -60,19 +60,17 @@
       }
     }
 
-    p.login {
-      padding: 0.7rem 2.5rem;
-      border-radius: 3px;
-      background-color: $color-primary;
-      cursor: pointer;
+    a {
+      text-decoration: none;
+      color: $color-white;
 
-      a {
-        text-decoration: none;
-        color: $color-white;
+      p.login {
+        padding: 0.7rem 3rem;
+        border-radius: 3rem;
+        background-color: $color-primary;
+        cursor: pointer;
       }
     }
-
-
   }
 
   .main {
@@ -277,7 +275,7 @@
 
     .screenshots {
       padding: 4rem 0;
-      display: none;  // Temporary: To be fixed later
+      display: none; // Temporary: To be fixed later
 
       >div {
         display: flex;
@@ -351,7 +349,7 @@
           top: 0.1em;
           left: 0.4em;
           text-shadow: none;
-          z-index: -300;        
+          z-index: -300;
         }
 
         &::after {
@@ -364,7 +362,7 @@
           bottom: -0.1em;
           right: 0.4em;
           text-shadow: none;
-          z-index: -300;   
+          z-index: -300;
         }
 
         .reviewer-img {

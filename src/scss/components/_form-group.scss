@@ -1,0 +1,42 @@
+.form-group {
+  margin: 1rem 0;
+
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+
+    .input-group-prepend,
+    .input-group-append {
+      padding: 1rem 2rem;
+      @include flexAbsCenter;
+
+      svg {
+        fill: $color-tertiary;
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    .input-group-append {
+      svg {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .form-control {
+      display: block;
+      line-height: 1.6;
+      font-size: 1.5rem;
+      flex-grow: 1;
+      border: none;
+      background-color: transparent;
+      outline: none;
+    }
+  }
+}

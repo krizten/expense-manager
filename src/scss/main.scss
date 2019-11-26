@@ -12,9 +12,12 @@
 @import 'layout/header';
 @import 'layout/footer';
 
-@import 'components/buttons';
+@import 'components/button';
+@import 'components/form-group';
+@import 'components/checkbox';
 
 @import 'pages/landing';
+@import 'pages/auth';
 
 @import 'themes/light';
 @import 'themes/dark';

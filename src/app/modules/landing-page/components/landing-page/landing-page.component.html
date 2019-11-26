@@ -17,11 +17,13 @@
       <div class="nav__auth-links">
         <div class="auth-links">
           <p class="signup">
-            <a href="/signup">Signup</a>
+            <a [routerLink]="['/signup']">Signup</a>
           </p>
-          <p class="login">
-            <a href="/login">Login</a>
-          </p>
+          <a [routerLink]="['/login']">
+            <p class="login">
+              Login
+            </p>
+          </a>
         </div>
       </div>
     </nav>

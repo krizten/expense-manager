@@ -7,11 +7,12 @@ import { AuthModule } from '@modules/auth/auth.module';
 import { ExpenseManagerModule } from '@modules/expense-manager/expense-manager.module';
 import { LandingPageModule } from '@modules/landing-page/landing-page.module';
 import { StoreModule } from '@modules/store/store.module';
+import { UiModule } from '@modules/ui/ui.module';
 import { AppComponent } from '../app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +21,8 @@ import { AppComponent } from '../app.component';
     AuthModule,
     ExpenseManagerModule,
     LandingPageModule,
-    StoreModule
+    StoreModule,
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
